@@ -66,7 +66,7 @@ const evaluate = function evaluate( string ){
 			}
 		@end-meta-configuration
 	*/
-	
+
 	try{
 		parseon( string );
 
@@ -96,6 +96,6 @@ const cheson = function cheson( string ){
 	}
 };
 
-harden( "evalute", evaluate, cheson );
+harden( "evaluate", evaluate, cheson );
 
 module.exports = cheson;
