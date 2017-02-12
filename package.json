@@ -1,0 +1,42 @@
+{
+  "name": "cheson",
+  "version": "0.0.0",
+  "description": "Check JSON string.",
+  "main": "cheson.js",
+  "support": "cheson.support.js",
+  "deploy": "cheson.deploy.js",
+  "browser": "cheson.deploy.js",
+  "scripts": {
+    "build": "babel cheson.js -o cheson.support.js && webpack --progress",
+    "test": "mocha cheson-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/cheson.git"
+  },
+  "keywords": [
+    "check",
+    "json",
+    "string",
+    "cheson"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/cheson/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/cheson#readme",
+  "dependencies": {
+    "babel-runtime": "^6.22.0",
+    "harden": "^0.14.0",
+    "parseon": "^0.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-latest": "^6.22.0",
+    "source-map-loader": "^0.1.6",
+    "webpack": "^2.2.1"
+  }
+}

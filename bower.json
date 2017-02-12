@@ -1,0 +1,29 @@
+{
+  "name": "cheson",
+  "version": "0.0.0",
+  "description": "Check JSON string.",
+  "main": "cheson.deploy.js",
+  "support": "cheson.support.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "check",
+    "json",
+    "string",
+    "cheson"
+  ],
+  "homepage": "https://github.com/volkovasystems/cheson",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "harden": "^0.14.0",
+    "parseon": "^0.3.0"
+  }
+}
