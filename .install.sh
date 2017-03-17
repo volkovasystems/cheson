@@ -14,4 +14,5 @@ webpack \
 bower install \
 harden \
 parseon \
---save
+--save \
+--force-latest
