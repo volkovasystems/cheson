@@ -50,6 +50,7 @@
 
 	@include:
 		{
+			"harden": "harden",
 			"parseon": "parseon"
 		}
 	@end-include
