@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>cheson unit test</title>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Cheson QUnit test</title>
-	<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
-	<script src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-	<script type="application/javascript" src="./cheson.deploy.js"></script>
-</head>
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
 
-<body>
-	<div id="qunit"></div>
-	<div id="qunit-fixture"></div>
-	<script>
-		QUnit.test( "equal test", function( assert ) {
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
 
-			assert.equal( cheson( "{ hello }" ), false, "should return false" );
-			assert.equal( cheson( '{ "name": "simple" }' ), true, "should return true" );
+		<script type="application/javascript" src="./cheson.deploy.js"></script>
+	</head>
 
-		} );
-	</script>
-</body>
+	<body>
+		<div id="qunit"></div>
 
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "cheson unit test", function( assert ) {
+
+				assert.equal( cheson( "{ hello }" ), false, "should return false" );
+				
+				assert.equal( cheson( '{ "name": "simple" }' ), true, "should return true" );
+
+			} );
+		</script>
+	</body>
 </html>
